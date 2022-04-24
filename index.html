@@ -16,19 +16,29 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <main class="flex-row justify-space-between">
+    <main class="row justify-space-between w-100">
+        <!-- left side -->
         <div class="col-12 col-md-3">
-            <div class="card">
+            <div id = "card" class="card">
                 <h2>Search for a City:</h2>
-                <form id="searchForm">
+                <form id="searchForm" class="card-body">
                     <input name="cityName" id="cityname" type="text" autofocus="true" class="city-input">
                     <button type="submit" class="btn bg-primary text-white">search</button>
-                </form>
-                
+                </form>    
             </div>
         </div>
+        <!-- right side -->
         <div class="col-12 col-md-9">
-            <div class="current-weather">
+            <div id = "current-weather" class="current-weather card">                
+               
+                <h2>Atlanta(04/24/21) cloud</h2>
+                <ul id="info-list">
+                    <li></li>
+                    <li>Wind:6.67mph</li>
+                    <li>Humidity:46%</li>
+                    <li>UV index:0.47</li>
+                </ul>
+                
 
             </div>
             <div class="future-weather">
